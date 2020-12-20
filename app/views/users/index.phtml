@@ -1,0 +1,30 @@
+<!--таблица для вывода списка пользователей из БД-->
+<table class="table table-striped">
+    <tr>
+        <th>Hash</th>
+        <th>Name</th>
+        <th>Family</th>
+        <th>Data key</th>
+        <th>Update</th>
+    </tr>
+    <?php foreach ($page->getItems() as $item) { ?>
+        <tr>
+            <td><?php echo $item['hash']; ?></td>
+            <td><?php echo $item['name']; ?></td>
+            <td><?php echo $item['family']; ?></td>
+            <td><?php echo $item['dataid']; ?></td>
+            <td><?php echo $item['updatenum']; ?></td>
+        </tr>
+    <?php } ?>
+</table>
+
+<!--кнопки навигации по всему списку пользователей (пагинация)-->
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="/users/index">Начало</a></li>
+        <li class="page-item"><a class="page-link" href="/users/index?page=<?= $page->getPrevious(); ?>">Предыдущая</a></li>
+        <li class="page-item"><a class="page-link" href="/users/index?page=<?= $page->getNext(); ?>">Следующая</a></li>
+        <li class="page-item"><a class="page-link" href="/users/index?page=<?= $page->getLast(); ?>">Конец</a></li>
+    </ul>
+</nav>
+<?php echo "Страница {$page->getCurrent()} из {$page->getLast()}"; ?>
