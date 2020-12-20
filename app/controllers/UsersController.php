@@ -6,6 +6,8 @@ class UsersController extends \Phalcon\Mvc\Controller
 {
     /**
      * метод выводит страницу со списком пользователей из БД
+     *
+     * в методе реализована пагинация
      */
     public function indexAction()
     {

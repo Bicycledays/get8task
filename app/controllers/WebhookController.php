@@ -7,7 +7,13 @@ use Phalcon\Http\Response;
 
 class WebhookController extends \Phalcon\Mvc\Controller
 {
-
+    /**
+     * метод обработки webhook запроса
+     *
+     * при поступлении webhook запроса по соответствующему адресу,
+     * данные из запроса сохраняются в связанные таблицы users и data.
+     * затем формируется и отправляется ответ
+     */
     public function indexAction()
     {
         $request = new Request();

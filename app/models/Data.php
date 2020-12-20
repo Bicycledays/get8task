@@ -2,6 +2,11 @@
 
 use Phalcon\Mvc\ModelInterface;
 
+/**
+ * Class Data
+ *
+ * Модель Data имеет связь с моделью Users
+ */
 class Data extends \Phalcon\Mvc\Model
 {
 
