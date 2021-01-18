@@ -1,7 +1,7 @@
 # Цель проекта
-Привет! Перед тобой репозиторий веб-приложения, написанного с помощью Phalcon framework в рамках тестового задания к собеседованию в компанию Get8
+Привет! Перед тобой репозиторий веб-приложения, написанного с помощью Phalcon framework с целью обучения работы с фреймворком
 
-[Требования к проекту и формулировка задания](https://docs.google.com/document/d/1HpV6uko_MZkhS26PFzZZPLgdja87zm6uuw1TbOUDllw/edit?usp=sharing)
+[Постановка задачи](https://docs.google.com/document/d/1HpV6uko_MZkhS26PFzZZPLgdja87zm6uuw1TbOUDllw/edit?usp=sharing)
 
 # Установка
 ## В разработке данного приложения был использован следующий стек
